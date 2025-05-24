@@ -1,0 +1,57 @@
+/* popup.css */
+/* Using Tailwind CSS primarily, so this file can be minimal or for overrides */
+/* Example: ensure body has a minimum width for the popup */
+body {
+    min-width: 350px; /* Adjust as needed */
+    /* font-family: 'Inter', sans-serif; /* Tailwind uses a sans-serif stack by default */
+}
+
+/* Styling for saved item cards */
+.saved-item-card {
+    /* Tailwind classes are applied directly in JS, but you can define base styles here */
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.saved-item-card:hover {
+    /* Example hover effect if not using Tailwind hover states directly */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tag {
+    /* Tailwind classes are applied directly in JS */
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: 0.375rem;
+}
+
+/* Message styles */
+.message {
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+}
+.message-success {
+    background-color: #d1fae5; /* Tailwind green-100 */
+    color: #065f46; /* Tailwind green-800 */
+    border: 1px solid #6ee7b7; /* Tailwind green-300 */
+}
+.dark .message-success {
+    background-color: #064e3b; /* Tailwind green-900 */
+    color: #a7f3d0; /* Tailwind green-200 */
+    border-color: #34d399; /* Tailwind green-500 */
+}
+.message-error {
+    background-color: #fee2e2; /* Tailwind red-100 */
+    color: #991b1b; /* Tailwind red-800 */
+    border: 1px solid #fca5a5; /* Tailwind red-300 */
+}
+.dark .message-error {
+    background-color: #7f1d1d; /* Tailwind red-900 */
+    color: #fecaca; /* Tailwind red-200 */
+    border-color: #f87171; /* Tailwind red-500 */
+}
